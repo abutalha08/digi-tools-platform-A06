@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with customizable templates and ATS optimization.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "/products/writing.png"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Scheduler",
+    "description": "Plan and schedule posts across multiple platforms.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Auto posting", "Analytics dashboard", "Multi-platform support"],
+    "icon": "/products/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Website Builder Kit",
+    "description": "Build responsive websites quickly with drag-and-drop tools.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Drag & drop editor", "SEO tools", "Responsive design"],
+    "icon": "/products/camera.png"
+  },
+  {
+    "id": 4,
+    "name": "Email Marketing Suite",
+    "description": "Design, send, and track email campaigns effectively.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Email templates", "Automation workflows", "Campaign analytics"],
+    "icon": "/products/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Graphic Design Pack",
+    "description": "Access premium design assets for your creative projects.",
+    "price": 29,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Icons & vectors", "PSD files", "Commercial license"],
+    "icon": "/products/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "SEO Optimization Tool",
+    "description": "Improve your website ranking with advanced SEO insights.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Keyword analysis", "Site audit", "Backlink tracking"],
+    "icon": "/products/social-media.png"
+  }
+]
