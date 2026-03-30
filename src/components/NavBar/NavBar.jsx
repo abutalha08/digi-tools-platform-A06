@@ -4,7 +4,7 @@ import cartImg from "../../assets/products/shopping-cart.png"
 const NavBar = () => {
     return (
         <div  className="w-full bg-base-100 shadow">
-            <div className="navbar max-w-full md:max-w-10/12 mx-auto">
+            <div className="navbar max-w-full md:max-w-10/12 mx-auto  ">
 
                 <div className="navbar-start ">
                     <div className="dropdown">
@@ -22,7 +22,7 @@ const NavBar = () => {
 
                         </ul>
                     </div>
-                    <a className="text-xl sm:text-3xl md:text-4xl font-bold  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
+                    <a className="text-xl sm:text-3xl md:text-4xl font-bold  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent py-1">DigiTools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-semibold">
