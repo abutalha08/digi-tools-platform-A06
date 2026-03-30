@@ -2,6 +2,7 @@
 import './App.css'
 import Banner from './components/Banner/Banner'
 import NavBar from './components/NavBar/NavBar'
+import StatsSection from './StatsSection/StatsSection'
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
 
     <main>
       <Banner></Banner>
+
+      <StatsSection></StatsSection>
     </main>
 
       
