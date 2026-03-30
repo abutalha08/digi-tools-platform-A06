@@ -5,6 +5,7 @@ import GettingStarted from './components/GettingStarted/GettingStarted'
 import NavBar from './components/NavBar/NavBar'
 import StatsSection from './components/StatsSection/StatsSection'
 import TransparentPricing from './components/TransparentPricing/TransparentPricing'
+import Workflow from './components/Workflow/Workflow'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
 
       <GettingStarted></GettingStarted>
       <TransparentPricing></TransparentPricing>
+      <Workflow></Workflow>
     </main>
 
       
