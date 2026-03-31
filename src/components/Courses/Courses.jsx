@@ -3,7 +3,7 @@ import CourseCard from "./CourseCard";
 import Tabs from "../Tabs/Tabs";
 import Cart from "../Cart/Cart";
 
-const Courses = ({ coursesPromise, activeTab, setActiveTab }) => {
+const Courses = ({ coursesPromise, activeTab, setActiveTab, carts, setCarts }) => {
     const courses = use(coursesPromise);
 
     // console.log(courses);
@@ -29,13 +29,13 @@ const Courses = ({ coursesPromise, activeTab, setActiveTab }) => {
             {activeTab === "product" && (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {courses.map((course) => (
-            <CourseCard key={course.id} course={course} />
+            <CourseCard key={course.id} course={course} carts = {carts} setCarts = {setCarts} />
           ))}
         </div>
       )}
 
       {activeTab === "cart" && (
-        <Cart /> 
+        <Cart carts = {carts} /> 
       )}
         </div>
     );

@@ -23,7 +23,10 @@ const coursesPromise = getCourses();
 function App() {
 
   const [activeTab, setActiveTab] = useState("product")
-  console.log(activeTab)
+  // console.log(activeTab) 
+   
+  const [carts, setCarts] = useState([])
+  // console.log(carts)
 
 
   return (
@@ -43,7 +46,7 @@ function App() {
         
 
         <Courses coursesPromise={coursesPromise} activeTab={activeTab}
-          setActiveTab={setActiveTab} ></Courses>
+          setActiveTab={setActiveTab} carts = {carts} setCarts = {setCarts} ></Courses>
 
         
 

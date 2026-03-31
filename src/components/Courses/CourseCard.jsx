@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-const CourseCard = ({course}) => {
+const CourseCard = ({course, carts, setCarts}) => {
 
     const [isBuy, setIsBuy] =useState(false);
 
     const handleBuyNow = () =>{
         setIsBuy(true);
+        setCarts([...carts, course]);
     }
     return (
         <div className="space-y-4 shadow-xl rounded-lg  p-5 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02] relative">
