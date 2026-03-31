@@ -7,6 +7,14 @@ const CourseCard = ({course, carts, setCarts}) => {
 
     const handleBuyNow = () =>{
         setIsBuy(true);
+
+        const isFound = carts.find(item => item.id === course.id )
+
+        if(isFound){
+            toast.error("Item already in cart!")
+            return;
+        }
+         
         setCarts([...carts, course]);
         toast.success("Item added to cart!")
     }
