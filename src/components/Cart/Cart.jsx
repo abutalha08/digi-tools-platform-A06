@@ -1,11 +1,13 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Cart = ({ carts, setCarts }) => {
 
     // Remove item from cart
     const handleRemove = (id) => {
         setCarts(carts.filter(item => item.id !== id));
+        toast.error("Item removed from cart!")
     };
 
     // Total price calculation
@@ -13,6 +15,7 @@ const Cart = ({ carts, setCarts }) => {
 
     const handleCheckOut = () => {
         setCarts([]);
+        toast.success("Payment successful!")
     }
 
     return (
