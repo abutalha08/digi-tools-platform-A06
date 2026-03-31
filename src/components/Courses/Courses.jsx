@@ -22,7 +22,7 @@ const Courses = ({ coursesPromise, activeTab, setActiveTab, carts, setCarts }) =
             </div>
 
             <div className="mb-14">
-                <Tabs activeTab={activeTab} 
+                <Tabs activeTab={activeTab} carts = {carts} 
     setActiveTab={setActiveTab} ></Tabs>
             </div>
 
@@ -35,7 +35,7 @@ const Courses = ({ coursesPromise, activeTab, setActiveTab, carts, setCarts }) =
       )}
 
       {activeTab === "cart" && (
-        <Cart carts = {carts} /> 
+        <Cart carts = {carts} setCarts = {setCarts} /> 
       )}
         </div>
     );

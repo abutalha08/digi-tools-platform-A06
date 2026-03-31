@@ -1,4 +1,5 @@
 import React from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Cart = ({ carts, setCarts }) => {
 
@@ -10,11 +11,27 @@ const Cart = ({ carts, setCarts }) => {
     // Total price calculation
     const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
 
+    const handleCheckOut = () => {
+        setCarts([]);
+    }
+
     return (
         <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md mt-10">
             <h2 className="text-2xl font-bold mb-6">Your Cart</h2>
 
-            <div className="space-y-4">
+            {
+                carts.length === 0 ? <div>
+                    <div className="flex items-center justify-center">
+
+                        <FaShoppingCart className="w-20 h-20"></FaShoppingCart>
+
+                    </div>
+
+                     <p className="text-center text-4xl font-bold">Cart is empty</p>
+
+                </div> :
+                <>
+                <div className="space-y-4">
                 {carts.map(item => (
                     <div
                         key={item.id}
@@ -49,22 +66,13 @@ const Cart = ({ carts, setCarts }) => {
           <span>${totalPrice}</span>
         </div>
 
-        <button className="w-full bg-gradient-to-r from-purple-600 to-purple-400 text-white px-6 py-3 rounded-full hover:scale-105 transition duration-300">
+        <button onClick={handleCheckOut} className="w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-6 py-3 rounded-full hover:scale-105 transition duration-300">
           Proceed To Checkout
         </button>
-
-
-
-
             </div>
-
-
-            
-
-            
-
-
-
+                   
+                </>
+            } 
 
         </div>
     );

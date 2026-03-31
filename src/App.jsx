@@ -32,9 +32,9 @@ function App() {
   return (
     <>
 
-      <header>
+      <header className="sticky top-0 z-50 bg-base-100 shadow-md">
 
-        <NavBar></NavBar>
+        <NavBar carts = {carts}></NavBar>
 
       </header>
 
