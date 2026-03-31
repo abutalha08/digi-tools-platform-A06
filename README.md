@@ -1,16 +1,32 @@
-# React + Vite
+# 🌐 Digi Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Supercharge your digital workflow!  
+Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today and explore amazing products effortlessly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
 
-## React Compiler
+This project is built using modern web technologies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js** – For building a responsive, dynamic user interface  
+- **Tailwind CSS & DaisyUI** – For stylish, responsive components  
+- **JavaScript (ES6+)** – For client-side logic and interactivity  
+- **React-Toastify** – For toast notifications  
+- **JSON** – To manage and display product data  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+Here are some key features of the Digi Tools Platform:
+
+1. **Toast Notifications** – Get instant feedback when adding or removing products.  
+2. **Cart Functionality** – Add or remove products, view total price, and see product count in the cart.  
+3. **Responsive Design** – Works seamlessly on mobile, tablet, and desktop.  
+4. **Cart Icon Updates** – The navbar cart icon dynamically updates to reflect items in the cart.  
+
+---
+
+
+
