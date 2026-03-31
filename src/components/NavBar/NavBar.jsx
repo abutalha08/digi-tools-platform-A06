@@ -1,5 +1,4 @@
 import React from "react";
-// import cartImg from "../../assets/products/shopping-cart.png"
 import { IoCartOutline } from "react-icons/io5";
 
 const NavBar = ({ carts }) => {

@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
-
 import Courses from './components/Courses/Courses'
 import Footer from './components/Footer/Footer'
 import GettingStarted from './components/GettingStarted/GettingStarted'
