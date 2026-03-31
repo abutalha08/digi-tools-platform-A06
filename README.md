@@ -24,7 +24,7 @@ Here are some key features of the Digi Tools Platform:
 1. **Toast Notifications** – Get instant feedback when adding or removing products.  
 2. **Cart Functionality** – Add or remove products, view total price, and see product count in the cart.  
 3. **Responsive Design** – Works seamlessly on mobile, tablet, and desktop.  
-4. **Cart Icon Updates** – The navbar cart icon dynamically updates to reflect items in the cart.  
+4. **Cart Icon Updates** – The navbar cart icon dynamically updates to reflect items in the cart..
 
 ---
 
