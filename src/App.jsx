@@ -1,6 +1,8 @@
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
+
 import Courses from './components/Courses/Courses'
 import Footer from './components/Footer/Footer'
 import GettingStarted from './components/GettingStarted/GettingStarted'
@@ -10,7 +12,8 @@ import TransparentPricing from './components/TransparentPricing/TransparentPrici
 import Workflow from './components/Workflow/Workflow'
 
 
-const getCourses = async ()=> {
+
+const getCourses = async () => {
   const response = await fetch("/course.json")
   return response.json()
 }
@@ -19,31 +22,39 @@ const coursesPromise = getCourses();
 
 function App() {
 
+  const [activeTab, setActiveTab] = useState("product")
+  console.log(activeTab)
+
 
   return (
     <>
 
-    <header>
+      <header>
 
-      <NavBar></NavBar>
+        <NavBar></NavBar>
 
-    </header>
+      </header>
 
-    <main>
-      <Banner></Banner>
+      <main>
+        <Banner></Banner>
 
-      <StatsSection></StatsSection>
+        <StatsSection></StatsSection>
+        
+        
 
-      <Courses coursesPromise = {coursesPromise}></Courses>
+        <Courses coursesPromise={coursesPromise} activeTab={activeTab}
+          setActiveTab={setActiveTab} ></Courses>
 
-      <GettingStarted></GettingStarted>
-      <TransparentPricing></TransparentPricing>
-      <Workflow></Workflow>
-    </main>
+        
 
-    <Footer></Footer>
+        <GettingStarted></GettingStarted>
+        <TransparentPricing></TransparentPricing>
+        <Workflow></Workflow>
+      </main>
 
-      
+      <Footer></Footer>
+
+
 
 
     </>
